@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// from pixelrevision
 // ensures that the camera snaps to pixels when moved
 // and ensures that camera doesn't exit the bounds
 public class CameraController : MonoBehaviour

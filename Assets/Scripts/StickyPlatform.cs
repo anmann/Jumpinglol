@@ -19,4 +19,23 @@ public class StickyPlatform : MonoBehaviour
             collision.gameObject.transform.SetParent(null);
         }
     }
+
+    // For some reason only OnCollisionEnter and Exit work for the fake traps
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+            collision.gameObject.transform.SetParent(transform);
+            PlayerMovement.IsOnFakeTrap = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+            collision.gameObject.transform.SetParent(null);
+            PlayerMovement.IsOnFakeTrap = false;
+        }
+    }
 }

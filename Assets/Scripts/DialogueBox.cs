@@ -80,7 +80,7 @@ public class DialogueBox : MonoBehaviour
 
         //Debug.Log(text);
 
-        int index = 1;
+        //int index = 1;
         //while (!dialogueFinished)
         //{
             //Debug.Log(index);

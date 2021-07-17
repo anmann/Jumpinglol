@@ -6,13 +6,11 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {
     private Animator anim;
-    private Animation crosshair;
     [SerializeField] private GameObject panel;
 
     private void Start()
     {
         anim = panel.GetComponent<Animator>();
-        crosshair = panel.GetComponent<Animation>();
     }
 
     public void StartGame()

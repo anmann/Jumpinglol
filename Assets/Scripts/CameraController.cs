@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ensures that the camera snaps to pixels when moved
-// and ensures that camera doesn't exit the bounds
 public class CameraController : MonoBehaviour
 {
     [SerializeField] float cameraMinX;
@@ -74,7 +72,6 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log(_camera.transform.position.x);
         if (_winSize.x != Screen.width || _winSize.y != Screen.height)
         {
             ResizeCamToTargetSize();
@@ -87,12 +84,10 @@ public class CameraController : MonoBehaviour
         if (player.transform.position.x < cameraMinX)
         {
             x = cameraMinX;
-            //_camera.transform.position = new Vector3(cameraMinX, player.transform.position.y, _camera.transform.position.z);
         }
         if (player.transform.position.y < cameraMinY)
         {
             y = cameraMinY;
-            //_camera.transform.position = new Vector3(player.position.x, cameraMinY, transform.position.z);
         }
         if (player.transform.position.y > cameraMaxY)
         {
@@ -100,12 +95,7 @@ public class CameraController : MonoBehaviour
             _camera.transform.position = new Vector3(player.position.x, cameraMaxY, transform.position.z);
         }
         _camera.transform.position = new Vector3(x, y, z);
-        //if (_camera && player)
-        //{
-        //    Vector2 newPosition = new Vector2(player.transform.position.x, player.transform.position.y);
-        //    float nextX = Mathf.Round(_pixelLockedPPU * newPosition.x);
-        //    float nextY = Mathf.Round(_pixelLockedPPU * newPosition.y);
-        //    _camera.transform.position = new Vector3(nextX / _pixelLockedPPU, nextY / _pixelLockedPPU, _camera.transform.position.z);
-        //}
+
     }
+
 }

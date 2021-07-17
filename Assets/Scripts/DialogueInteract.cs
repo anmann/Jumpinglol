@@ -6,18 +6,6 @@ public class DialogueInteract : MonoBehaviour
 {
     [SerializeField] private string text;
 
-    string lol = "The waves are large today. You can really lose track of time watching them... \n The water isn't moving.";
-
-    private void Start()
-    {
-        
-    }
-
-    private void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player")

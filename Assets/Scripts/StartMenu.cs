@@ -25,7 +25,7 @@ public class StartMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    private void Quit()
+    public void Quit()
     {
         Application.Quit();
     }

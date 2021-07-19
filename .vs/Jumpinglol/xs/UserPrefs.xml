@@ -1,12 +1,15 @@
 ﻿<Properties StartupConfiguration="{37638081-3C5A-A1B5-D366-56E97802F237}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EndMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rotate.cs">
     <Files>
       <File FileName="Assets/Scripts/StartMenu.cs" Line="28" Column="11" />
-      <File FileName="Assets/Scripts/DialogueBox.cs" Line="25" Column="26" />
+      <File FileName="Assets/Scripts/DialogueBox.cs" Line="109" Column="6" />
       <File FileName="Assets/Scripts/WaypointFollower.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/PlayerLife.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ItemCollector.cs" Line="9" Column="36" />
-      <File FileName="Assets/Scripts/EndMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EndMenu.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/DialogueInteract.cs" Line="12" Column="10" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="2" Column="1" />
+      <File FileName="Assets/Scripts/Rotate.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +17,7 @@
           <Node name="Jumpinglol" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="EndMenu.cs" selected="True" />
+                <Node name="Rotate.cs" selected="True" />
               </Node>
             </Node>
           </Node>

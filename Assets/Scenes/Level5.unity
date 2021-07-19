@@ -41577,9 +41577,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.061846852, y: 0.00000023841858}
+  m_Offset: {x: 0.012076855, y: -0.029861689}
   serializedVersion: 2
-  m_Radius: 1.2113236
+  m_Radius: 1.0918763
 --- !u!114 &417501312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42386,7 +42386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f76292fc4faaf495d97064637b62500c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Looking for something?
+  text: Looking for something?/
 --- !u!61 &659804315
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42472,7 +42472,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659804311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.4, y: 11.89, z: 0}
+  m_LocalPosition: {x: 23.5, y: 11.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -43367,6 +43367,7 @@ MonoBehaviour:
   trigger: {fileID: 659804311}
   waitTime: 0.03
   textBoxEstablish: {fileID: 248674489}
+  finishedDisplaying: 0
 --- !u!225 &840927612
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -44075,9 +44076,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019013286, y: 0.00000023841858}
+  m_Offset: {x: -0.019013286, y: -0.02986145}
   serializedVersion: 2
-  m_Radius: 1.1304635
+  m_Radius: 1.1006017
 --- !u!1001 &1047632065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87243,9 +87244,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019013286, y: 0.00000023841858}
+  m_Offset: {x: -0.019013286, y: -0.019907475}
   serializedVersion: 2
-  m_Radius: 1.1304635
+  m_Radius: 1.1105556
 --- !u!114 &1929185071
 MonoBehaviour:
   m_ObjectHideFlags: 0

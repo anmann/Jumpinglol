@@ -10,9 +10,12 @@ public class DialogueInteract : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            Debug.Log("OK");
             DialogueBox.dialogueOn = true;
             DialogueBox.text = text;
+            DialogueBox.index = 0;
+            DialogueBox.stringList = new ArrayList();
+            DialogueBox.dialogueFinished = false;
+            DialogueBox.dialogueStarted = false;
         }
     }
 

@@ -7,12 +7,12 @@ public class NPCLookAtPlayer : MonoBehaviour
     private SpriteRenderer sprite;
     [SerializeField] private GameObject player;
 
-    void Start()
+    private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    private void Update()
     {
         if (player.transform.position.x < transform.position.x)
         {

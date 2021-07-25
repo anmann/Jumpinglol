@@ -27,25 +27,38 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
         coll = GetComponent<BoxCollider2D>();
+        moveSpeed = 7f;
     }
 
     private void Update()
     {
-        // use Unity's input manager to be more efficient
-        // Horizontal movement w/ joystick support
-        // GetAxis lets it slide slightly after button release, GetAxisRaw stops
-        // it imediately
-        xDir = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(xDir * moveSpeed, rb.velocity.y);
-
-        // Vertical movement
-        if (Input.GetButtonDown("Jump") && (IsGrounded() || IsOnFakeTrap))
+        if (ItemCollector.speedUp)
         {
-            jumpSoundEffect.Play();
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            moveSpeed = 12f;
+        }
+        else
+        {
+            moveSpeed = 7f;
         }
 
-        UpdateAnimation();
+        if (!PlayerLife.hasDied)
+        { 
+            // use Unity's input manager to be more efficient
+            // Horizontal movement w/ joystick support
+            // GetAxis lets it slide slightly after button release, GetAxisRaw stops
+            // it imediately
+            xDir = Input.GetAxisRaw("Horizontal");
+            rb.velocity = new Vector2(xDir * moveSpeed, rb.velocity.y);
+
+            // Vertical movement
+            if (Input.GetButtonDown("Jump") && (IsGrounded() || IsOnFakeTrap))
+            {
+                jumpSoundEffect.Play();
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            }
+
+            UpdateAnimation();
+        }
     }
 
     private void UpdateAnimation()

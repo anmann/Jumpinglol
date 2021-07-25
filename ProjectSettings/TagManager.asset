@@ -7,6 +7,7 @@ TagManager:
   - Apple
   - Trap
   - FakeTrap
+  - Speed
   layers:
   - Default
   - TransparentFX

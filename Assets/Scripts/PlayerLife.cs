@@ -14,12 +14,14 @@ public class PlayerLife : MonoBehaviour
 
     [SerializeField] private AudioSource deathSoundEffect;
     private bool deathAnimRan;
+    public static bool hasDied;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         deathAnimRan = false;
+        hasDied = false;
     }
 
     private void Update()
@@ -51,6 +53,7 @@ public class PlayerLife : MonoBehaviour
     {
         anim.SetTrigger("death");
         deathSoundEffect.Play();
+        hasDied = true;
         rb.bodyType = RigidbodyType2D.Static;
         ItemCollector.apples = 0;
     }

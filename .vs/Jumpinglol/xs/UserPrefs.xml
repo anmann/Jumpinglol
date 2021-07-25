@@ -1,15 +1,17 @@
 ﻿<Properties StartupConfiguration="{37638081-3C5A-A1B5-D366-56E97802F237}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rotate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/NPCLookAtPlayer.cs">
     <Files>
       <File FileName="Assets/Scripts/StartMenu.cs" Line="28" Column="11" />
-      <File FileName="Assets/Scripts/DialogueBox.cs" Line="109" Column="6" />
-      <File FileName="Assets/Scripts/WaypointFollower.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerLife.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ItemCollector.cs" Line="9" Column="36" />
-      <File FileName="Assets/Scripts/EndMenu.cs" Line="18" Column="1" />
-      <File FileName="Assets/Scripts/DialogueInteract.cs" Line="12" Column="10" />
-      <File FileName="Assets/Scripts/CameraController.cs" Line="2" Column="1" />
-      <File FileName="Assets/Scripts/Rotate.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DialogueBox.cs" />
+      <File FileName="Assets/Scripts/WaypointFollower.cs" />
+      <File FileName="Assets/Scripts/PlayerLife.cs" Line="56" Column="24" />
+      <File FileName="Assets/Scripts/ItemCollector.cs" Line="28" Column="10" />
+      <File FileName="Assets/Scripts/EndMenu.cs" />
+      <File FileName="Assets/Scripts/DialogueInteract.cs" />
+      <File FileName="Assets/Scripts/CameraController.cs" />
+      <File FileName="Assets/Scripts/Rotate.cs" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="61" Column="31" />
+      <File FileName="Assets/Scripts/NPCLookAtPlayer.cs" Line="15" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +19,7 @@
           <Node name="Jumpinglol" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Rotate.cs" selected="True" />
+                <Node name="NPCLookAtPlayer.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -27,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f2e02ac4-3ac2-4ac2-a620-c615dbc04702" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a7e26952-0357-4a93-96e9-c1e240b4a43e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

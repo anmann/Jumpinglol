@@ -18,7 +18,7 @@ public class ItemCollector : MonoBehaviour
     private void Start()
     {
         applesText.text = "Apples: " + apples;
-        if (speedUpText != null) { speedUpText.text = ""; }
+        if (speedUpText != null) speedUpText.text = "";
     }
 
     private void Update()
@@ -34,7 +34,6 @@ public class ItemCollector : MonoBehaviour
         if (collision.gameObject.CompareTag("Apple"))
         {
             collectionSoundEffect.Play();
-            // Removes item from screen
             Destroy(collision.gameObject);
             apples++;
             applesText.text = "Apples: " + apples;

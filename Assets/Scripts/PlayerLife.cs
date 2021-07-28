@@ -14,6 +14,7 @@ public class PlayerLife : MonoBehaviour
 
     [SerializeField] private AudioSource deathSoundEffect;
     private bool deathAnimRan;
+
     public static bool hasDied;
 
     private void Start()
@@ -56,10 +57,5 @@ public class PlayerLife : MonoBehaviour
         hasDied = true;
         rb.bodyType = RigidbodyType2D.Static;
         ItemCollector.apples = 0;
-    }
-
-    private void RestartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

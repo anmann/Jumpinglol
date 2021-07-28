@@ -9,18 +9,17 @@ public class DialogueBox : MonoBehaviour
 {
     public static bool dialogueOn = false;
     public static bool dialogueFinished = false;
+
     private CanvasGroup canv;
     public static string text;
     [SerializeField] private GameObject trigger;
-    [SerializeField] private float waitTime;
     public static UnityEngine.UI.Text textBox;
-
     [SerializeField] private UnityEngine.UI.Text textBoxEstablish;
 
+    [SerializeField] private float waitTime;
+
     public static bool dialogueStarted = false;
-
     public static bool dialogueInterrupted = false;
-
     public bool finishedDisplaying = false;
 
     public static int index;
@@ -89,7 +88,8 @@ public class DialogueBox : MonoBehaviour
             {
                 string s = (string)stringList[index];
                 textBox.text = "";
-                if (!finishedDisplaying) { dialogueInterrupted = true; }
+
+                if (!finishedDisplaying) dialogueInterrupted = true; 
 
                 StartCoroutine(DisplayText(s));
                 index++;

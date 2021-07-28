@@ -92,7 +92,6 @@ public class CameraController : MonoBehaviour
         if (player.transform.position.y > cameraMaxY)
         {
             y = cameraMaxY;
-            _camera.transform.position = new Vector3(player.position.x, cameraMaxY, transform.position.z);
         }
         _camera.transform.position = new Vector3(x, y, z);
 

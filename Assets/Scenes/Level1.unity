@@ -48950,7 +48950,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682709881}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -49811,7 +49811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7049419167799661742, guid: 2eb6bead8e39e475e82ec06b02de583e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.2378712
+      value: -2.34
       objectReference: {fileID: 0}
     - target: {fileID: 7049419167799661742, guid: 2eb6bead8e39e475e82ec06b02de583e, type: 3}
       propertyPath: m_LocalPosition.z

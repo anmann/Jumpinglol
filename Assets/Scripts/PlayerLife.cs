@@ -8,8 +8,11 @@ public class PlayerLife : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
 
+    // Set the max bounds to 0 if not relevant
     [SerializeField] private bool boundsDeath;
     [SerializeField] private float yBoundsMin;
+    [SerializeField] private float yBoundsMax;
+    [SerializeField] private float xBoundsMin;
     [SerializeField] private float xBoundsMax;
 
     [SerializeField] private AudioSource deathSoundEffect;
@@ -29,16 +32,26 @@ public class PlayerLife : MonoBehaviour
     {
         if (boundsDeath)
         {
-            if (transform.position.y < yBoundsMin && !deathAnimRan)
+            if (yBoundsMin != 0 && transform.position.y < yBoundsMin && !deathAnimRan)
             {
                 Death();
                 deathAnimRan = true;
             }
-            //else if (transform.position.x > xBoundsMax && !deathAnimRan)
-            //{
-            //    Death();
-            //    deathAnimRan = true;
-            //}
+            else if (yBoundsMax != 0 && transform.position.y > yBoundsMax && !deathAnimRan)
+            {
+                Death();
+                deathAnimRan = true;
+            }
+            else if (xBoundsMin != 0 && transform.position.x < xBoundsMin && !deathAnimRan)
+            {
+                Death();
+                deathAnimRan = true;
+            }
+            else if (xBoundsMax != 0 && transform.position.x > xBoundsMax && !deathAnimRan)
+            {
+                Death();
+                deathAnimRan = true;
+            }
         }
     }
 
